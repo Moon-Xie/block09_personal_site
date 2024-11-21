@@ -1,0 +1,66 @@
+body {
+    background-color: rgb(44, 88, 219);
+}
+nav{
+    background-color: rgb(104, 102, 100);
+    font-size: 150%;
+    vertical-align: middle;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    
+}
+nav ul{
+    background-color: rgb(104, 102, 100);
+
+}
+nav li {
+    margin-left: 50px;
+    display: inline-block;
+    background-color: rgb(104, 102, 100);
+}
+#staffName{
+    color: aliceblue;
+    margin-left: 10px;
+    margin-right: 55%;
+}
+.navbar-item{
+    background-color: rgb(104, 102, 100);
+    color: aliceblue;
+}
+footer{
+    background-color: rgb(104, 102, 100);
+    font-size: 150%;
+    vertical-align: middle;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+footer ul{
+    background-color: rgb(104, 102, 100);
+}
+footer li{
+        display: inline-block;
+        background-color: rgb(104, 102,100);
+        margin-right: 20px;
+        margin-left: 50px;
+}
+.footer-item{
+    background-color: rgb(104, 102, 100);
+}
+.container{
+    background-color: aqua;
+    width: 100%;
+    margin-top: 80px;
+    position: relative
+    ;
+}
+.box1{
+    background-color: blue;
+}
