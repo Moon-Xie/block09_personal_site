@@ -6,52 +6,170 @@
     <title>Personal_Site_About</title>
     <link rel="stylesheet" href="style.css">
     <script src="javascript.js"></script>
+    <style>
+        main {
+            margin: 80px 24px;
+        }
+        h1 {
+            font-size: 30px;
+            font-weight: 100;
+        }
+        main img {
+            height: 128px;
+        }
+        h2 {
+            margin: 10px 0px 10px 0px;
+        }
+        .box {
+            display: grid;
+            grid-template-rows: 50px 80px 80px 80px 80px ;
+            grid-template-columns: 3fr 1fr 1fr;
+        }
+        .boxitem1 {
+            grid-column: 1/5;
+            grid-row: 1/2;
+        }
+        .boxitem2 {
+            grid-column: 1/4;
+            grid-row: 2/3;
+        }
+        .boxitem3 {
+            grid-column: 1/4;
+            grid-row: 3/4;
+        }
+        .boxitem4 {
+            grid-column: 1/5;
+            grid-row: 4/5;
+        }
+        .boxitem5 {
+            grid-column: 1/5;
+            grid-row: 5/6;
+        }
+        .boxitem6 {
+            grid-column-end: 5;
+            grid-row:2/4 ;
+        }
+        .box1 {
+            display: grid;
+            grid-template-rows: 50px 80px 80px 80px 80px ;
+            grid-template-columns: 1fr 1fr 3fr;
+        }
+        .boxitem7 {
+            grid-column: 1/4;
+            grid-row: 1/2 ;
+        }
+        .boxitem8 {
+            grid-column: 2/4;
+            grid-row: 2/3 ;
+            margin-left: 16px;
+        }
+        .boxitem9 {
+            grid-column: 2/4;
+            grid-row: 3/4 ;
+            margin-left: 16px;
+        }
+        .boxitem10 {
+            grid-column: 1/4;
+            grid-row: 4/5 ;
+        }
+        .boxitem11 {
+            grid-column: 1/4;
+            grid-row: 5/6 ;
+        }
+        .boxitem12 {
+            grid-column: 1/2;
+            grid-row: 2/4 ;
+            margin:16px 0px 16px 0px ;
+        }
+
+    </style>
 </head>
 <body>
     <nav>
         <ul type="none">
             <li id="staffName">Moon</li>
-            <li>
-                <a class="navbar-item" href="index.html">Home</a>
-            </li>
-            <li>
-                <a class="navbar-item" href="about.html">About</a>
-            </li>
-            <li>
-                <a class="navbar-item" href="portfolio.html">Portfolio</a>
-            </li>
+            <div class="link">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="current" href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </div>
         </ul>
     </nav>
-    <section>
-        <p>When I am not studying or working, I'm doing the following things.</p>
-        <b>Dancing</b>
-        <p>I love dancing.</p>
-        <img src="dancing.jpeg" alt="dancing">
-        <b>Photography</b>
-        <p>I am learning and practicing.</p>
-        <img src="photography.jpeg" alt="photography">
-        <b>Traveling</b>
-        <p>I love traveling!</p>
-        <img src="travel.jpeg" alt="traveling">
-    </section>
+    <main>
+        <h1>
+            When I am not studying or working, I'm doing the following things.
+        </h1>
+        <hr>
+        <div class="box">
+            <h2 class="boxitem1">Dancing</h2>
+            <p class="boxitem2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, iusto explicabo! Consequatur rerum vitae aperiam est quasi? A, porro, ullam illo vitae nulla dolorum quis sapiente magnam facere accusantium ipsum.
+            </p>
+            <p class="boxitem3">
+                Quos expedita eos officiis quae reiciendis quasi maxime a id fugit obcaecati accusamus doloremque, esse aut rem at nostrum fuga qui repellendus vel nesciunt culpa cupiditate! Est quibusdam magnam quasi.
+            </p>
+            <p class="boxitem4">
+                Illo explicabo nesciunt, ratione, labore quaerat, quis amet reiciendis commodi dignissimos sapiente illum minima voluptates porro officiis nostrum dolorem! Cum quae quam ipsam expedita cupiditate voluptates placeat. Modi, tempore et.
+            </p>
+            <p class="boxitem5">
+                Eveniet illum illo explicabo ea amet expedita fugiat omnis excepturi dignissimos unde nam beatae consequuntur praesentium quas voluptas, doloremque nemo reiciendis consequatur sed ut officia soluta repellendus! Corporis, ex quo!
+            </p>
+            <img class="boxitem6" src="dancing.jpeg" alt="dancing">
+        </div>
+        <hr>
+        <div class="box1">
+            <h2 class="boxitem7">Photography</h2>
+            <p class="boxitem8">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, iusto explicabo! Consequatur rerum vitae aperiam est quasi? A, porro, ullam illo vitae nulla dolorum quis sapiente magnam facere accusantium ipsum.
+            </p>
+            <p class="boxitem9">
+                Quos expedita eos officiis quae reiciendis quasi maxime a id fugit obcaecati accusamus doloremque, esse aut rem at nostrum fuga qui repellendus vel nesciunt culpa cupiditate! Est quibusdam magnam quasi.
+            </p>
+            <p class="boxitem10">
+                Illo explicabo nesciunt, ratione, labore quaerat, quis amet reiciendis commodi dignissimos sapiente illum minima voluptates porro officiis nostrum dolorem! Cum quae quam ipsam expedita cupiditate voluptates placeat. Modi, tempore et.
+            </p>
+            <p class="boxitem11">
+                Eveniet illum illo explicabo ea amet expedita fugiat omnis excepturi dignissimos unde nam beatae consequuntur praesentium quas voluptas, doloremque nemo reiciendis consequatur sed ut officia soluta repellendus! Corporis, ex quo!
+            </p>
+            <img class="boxitem12" src="photography.jpeg" alt="photography">
+        </div>
+        <hr>
+        <div class="box">
+            <h2 class="boxitem1">Traveling</h2>
+            <p class="boxitem2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, iusto explicabo! Consequatur rerum vitae aperiam est quasi? A, porro, ullam illo vitae nulla dolorum quis sapiente magnam facere accusantium ipsum.
+            </p>
+            <p class="boxitem3">
+                Quos expedita eos officiis quae reiciendis quasi maxime a id fugit obcaecati accusamus doloremque, esse aut rem at nostrum fuga qui repellendus vel nesciunt culpa cupiditate! Est quibusdam magnam quasi.
+            </p>
+            <p class="boxitem4">
+                Illo explicabo nesciunt, ratione, labore quaerat, quis amet reiciendis commodi dignissimos sapiente illum minima voluptates porro officiis nostrum dolorem! Cum quae quam ipsam expedita cupiditate voluptates placeat. Modi, tempore et.
+            </p>
+            <p class="boxitem5">
+                Eveniet illum illo explicabo ea amet expedita fugiat omnis excepturi dignissimos unde nam beatae consequuntur praesentium quas voluptas, doloremque nemo reiciendis consequatur sed ut officia soluta repellendus! Corporis, ex quo!
+            </p>
+            <img class="boxitem6" src="travel.jpeg" alt="traveling">
+        </div>
+    </main>
     <footer>
-        <ul type="none">
-            <li>
-                <a href="https://www.facebook.com/">
-                    <img src="facebook.png" alt="Facebook" height="50px">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/">
-                    <img src="ins.png" alt="Ins" height="50px">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/">
-                    <img src="twitter.png" alt="Twitter" height="50px">
-                </a>
-            </li>
-        </ul>
+        <a class="fitem1" href="https://www.facebook.com/">
+            <img src="facebook.png" alt="Facebook" height="50px">
+        </a>
+        <a class="fitem2" href="https://www.facebook.com/">
+            <img src="ins.png" alt="Ins" height="50px">
+        </a>
+        <a class="fitem3" href="https://www.facebook.com/">
+            <img src="twitter.png" alt="Twitter" height="50px">
+        </a>
     </footer>
 </body>
 </html>

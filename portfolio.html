@@ -6,58 +6,129 @@
     <title>Personal_Site_Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="javascript.js"></script>
+    <style>
+        main {
+            margin: 80px 24px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 100;
+            margin-bottom: 0px;
+            border-bottom: 1px solid white;
+        }
+        main img {
+            height: 160px;
+            width: 240px;
+            border: 1px solid black;
+            box-shadow: 0 3px 6px -2px #5a5a5a;
+        }
+        .project {
+            background-color: white;
+            margin: 32px 48px;
+            padding: 16px 16px;
+            box-shadow: 0 3px 6px -2px #ccc;
+        }
+        .project h2, p {
+            color: black !important;
+        }
+        h2 {
+            font-size: 32px;
+            font-weight: 500;
+            color: black;
+            margin: 0px 0px;
+            border-bottom: 2px solid rgb(204, 204, 204);
+            align-self: center;
+        }
+        .project-content {
+            margin: 32px 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+
+    </style>
 </head>
 <body>
     <nav>
         <ul type="none">
             <li id="staffName">Moon</li>
-            <li>
-                <a class="navbar-item" href="index.html">Home</a>
-            </li>
-            <li>
-                <a class="navbar-item" href="about.html">About</a>
-            </li>
-            <li>
-                <a class="navbar-item" href="portfolio.html">Portfolio</a>
-            </li>
+            <div class="link">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a class="current" href="portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </div>
         </ul>
     </nav>
-    <section>
-        <p>Things I've biult, in no particular order.</p>
-    </section>
-    <section>
-        <h3>The First Project</h3>
-        <p>The zoopage</p>
-        <img src="project1.webp" alt="1st Project">
-    </section>
-    <section>
-        <h3>The Second Project</h3>
-        <p>The groceryList</p>
-        <img src="project2.webp" alt="2nd Project">
-    </section>
-    <section>
-        <h3>The Third Project</h3>
-        <p>My first website</p>
-        <img src="project3.png" alt="3rd Project">
-    </section>
+    <main>
+        <h1>
+            Things I've biult, in no particular order.
+        </h1>
+        <section class="project">
+            <h2>The First Project</h2>
+            <div class="project-content">
+                <p style="margin-right: 16px;">
+                    <b style="color: black;">The ZooPage:<br></b>
+                    <br>
+                    The Wild Animal Mini-Zoo recently hired many new zookeeper 
+                    interns who will work at the zoo for the next six months. 
+                    They have contracted your team to build a page that will make it easier 
+                    for the new interns to identify each animal and understand their needs and behaviors.
+                </p>
+                <img src="project1.jpeg" alt="1st Project">
+            </div>
+        </section>
+        <section class="project">
+            <h2>The Second Project</h2>
+            <div class="project-content" style="display: flex; flex-direction: row-reverse;">
+                <p style="margin-left: 16px;">
+                    <b style="color: black;">The Grocery List:<br></b>
+                    <br>
+                    You want to make grocery shopping a lot easier and decided 
+                    to move it online instead of on paper. Your goal is to 
+                    create an HTML file that has food photos, different 
+                    categories of grocery items and list the different items, 
+                    which could look something like the following image:
+                </p>
+                <img src="project2.png" alt="2nd Project">
+            </div>
+        </section>
+        <section class="project">
+            <h2>The Third Project</h2>
+            <div class="project-content">
+                <p style="margin-right: 16px;">
+                    <b style="color: black;">My Personal Website:<br></b>
+                    <br>
+                    Calliope has asked you to create a personal site with a brief 
+                    bio. It is a chance to show off who you are, what you are 
+                    about, and what you have accomplished. We will focus on 
+                    three main areas: the landing page, an about page, and a 
+                    portfolio page.
+                </p>
+                <img src="project3.png" alt="3rd Project">
+            </div>
+        </section>
+    </main>
     <footer>
-        <ul type="none">
-            <li>
-                <a href="https://www.facebook.com/">
-                    <img src="facebook.png" alt="Facebook" height="50px">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/">
-                    <img src="ins.png" alt="Ins" height="50px">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/">
-                    <img src="twitter.png" alt="Twitter" height="50px">
-                </a>
-            </li>
-        </ul>
+        <a class="fitem1" href="https://www.facebook.com/">
+            <img src="facebook.png" alt="Facebook" height="50px">
+        </a>
+        <a class="fitem2" href="https://www.facebook.com/">
+            <img src="ins.png" alt="Ins" height="50px">
+        </a>
+        <a class="fitem3" href="https://www.facebook.com/">
+            <img src="twitter.png" alt="Twitter" height="50px">
+        </a>
     </footer>
 </body>
 </html>

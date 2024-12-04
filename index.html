@@ -6,52 +6,88 @@
     <title>Personal_Site_HomePage</title>
     <link rel="stylesheet" href="style.css">
     <script src="javascript.js"></script>
+    <style>
+        h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-size: 25px;
+        }
+        
+        main {
+            height: 800px;
+            margin-top: 80px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            margin: 80px 10px 10px 10px;
+        }
+
+        .box {
+            margin: 24px 24px 24px 24px;
+            display: flex; 
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .boxitem2 {
+            font-weight: 100;
+            font-family: cursive ;
+            font-size: 50px;
+            text-shadow: 1px 1px 2px black;
+            text-align: center;
+            margin: 0px 24px 24px 0px;
+        }
+    </style>
 </head>
 <body>
     <nav>
         <ul type="none">
             <li id="staffName">Moon</li>
-            <li>
-                <a class="navbar-item" href="index.html">Home</a>
-            </li>
-            <li>
-                <a class="navbar-item" href="about.html">About</a>
-            </li>
-            <li>
-                <a class="navbar-item" href="portfolio.html">Portfolio</a>
-            </li>
+            <div class="link">
+                <li>
+                    <a class="current" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </div>
         </ul>
     </nav>
-    <section class="container">
-        <section class="box1">
-            <h3>Developer, UX/UI Designer, Student</h3>
-            <span>Now studying in programing and hoping to have a remote job. Loving to learn from others.</span>
-            <aside >
-                <img src="avatar.jpeg" alt="Moon">
-            </aside>
-            <em>
-                <b>"No pay, no gain!"</b>
-            </em>
-        </section>
-    </section>
+    <main>
+        <div class="box">
+            <div class="boxitem1">
+                <h2>Developer, Student</h2>
+                <p>
+                    Now studying in programing and hoping to have a remote job. Loving to learn from others. Interstes in building new things and fixing different problems.
+                </p>
+            </div>
+            <img src="profilepic.jpeg" alt="Moon" width="300">
+        </div>
+        <p class="boxitem2">
+            "There's only one corner of the universe you can be sure of improving, and that's your own self!"
+            <br>
+            -Aldous Huxley
+        </p>
+    </main>
     <footer>
-        <ul type="none">
-            <li>
-                <a class="footer-item" href="https://www.facebook.com/">
+                <a class="fitem1" href="https://www.facebook.com/">
                     <img src="facebook.png" alt="Facebook" height="50px">
                 </a>
-            </li>
-            <li>
-                <a class="footer-item" href="https://www.facebook.com/">
+                <a class="fitem2" href="https://www.facebook.com/">
                     <img src="ins.png" alt="Ins" height="50px">
                 </a>
-            </li>
-            <li>
-                <a  class="footer-item" href="https://www.facebook.com/">
+                <a class="fitem3" href="https://www.facebook.com/">
                     <img src="twitter.png" alt="Twitter" height="50px">
                 </a>
-            </li>
-        </ul>
     </footer>
 </body>
 </html>
