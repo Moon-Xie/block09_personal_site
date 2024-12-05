@@ -1,0 +1,39 @@
+main {
+    margin: 80px 24px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 100;
+    margin-bottom: 0px;
+    border-bottom: 1px solid white;
+}
+main img {
+    height: 160px;
+    width: 240px;
+    border: 1px solid black;
+    box-shadow: 0 3px 6px -2px #5a5a5a;
+}
+.project {
+    background-color: white;
+    margin: 32px 48px;
+    padding: 16px 16px;
+    box-shadow: 0 3px 6px -2px #ccc;
+}
+.project h2, p {
+    color: black !important;
+}
+h2 {
+    font-size: 32px;
+    font-weight: 500;
+    color: black;
+    margin: 0px 0px;
+    border-bottom: 2px solid rgb(204, 204, 204);
+    align-self: center;
+}
+.project-content {
+    margin: 32px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

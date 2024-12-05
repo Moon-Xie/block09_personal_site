@@ -1,0 +1,32 @@
+h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+p {
+    font-size: 25px;
+}
+
+main {
+    height: 800px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 80px 10px 10px 10px;
+}
+
+.box {
+    margin: 24px 24px 24px 24px;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+}
+
+.boxitem2 {
+    font-weight: 100;
+    font-family: cursive ;
+    font-size: 50px;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+    margin: 0px 24px 24px 0px;
+}
