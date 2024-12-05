@@ -3,46 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/contact.css">
     <title>contact</title>
-    <style>
-        main {
-            height: 800px;
-            margin-top: 80px;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            margin: 80px 10px 10px 10px;
-        }
-        h1 {
-            font-size: 52px;
-            margin-left: 24px;
-        }
-        .main-content {
-            display: grid;
-            grid-template-columns: 20% 60% 20%;
-        }
-        .form-content {
-            grid-column: 2/3;
-            display: flex;
-            flex-direction: column;
-        }
-        .text-input {
-            margin:10px 0px;
-            align-items: center;
-        }
-        .input-box {
-            width: 100%;
-            height: 30px;
-        }
-        label {
-            font-size: 25px;
-        }
-        .submit-box {
-            color: black;
-            font-size: 16px;
-        }
-    </style>
 </head>
 <body>
     <nav>
@@ -68,7 +31,7 @@
         <h1>Contact Me:</h1>
         <br>
         <div class="main-content">
-            <form class="form-content">
+            <form class="form-content" id="form">
                 <div class="text-input">
                     <label for="name">Name:</label>
                     <br>
@@ -80,26 +43,27 @@
                     <input class="input-box" type="text" name="email" id="email">
                 </div>
                 <div  class="text-input">
-                    <label for="Message">Message</label>
+                    <label for="message">Message:</label>
                     <br>
-                    <input class="input-box" type="text" name="Message" id="Message">
+                    <input class="input-box" type="text" name="message" id="message">
                 </div>
                 <br>
                 <div>
-                    <input class="submit-box" type="button" value="Submit">
+                    <input class="submit-box" type="submit" value="Submit" id="submit">
+                    <script src="javascript.js"></script>
                 </div>
             </form>
         </div>
     </main>
     <footer>
         <a class="fitem1" href="https://www.facebook.com/">
-            <img src="facebook.png" alt="Facebook" height="50px">
+            <img src="asset/facebook.png" alt="Facebook" height="50px">
         </a>
         <a class="fitem2" href="https://www.facebook.com/">
-            <img src="ins.png" alt="Ins" height="50px">
+            <img src="asset/ins.png" alt="Ins" height="50px">
         </a>
         <a class="fitem3" href="https://www.facebook.com/">
-            <img src="twitter.png" alt="Twitter" height="50px">
+            <img src="asset/twitter.png" alt="Twitter" height="50px">
         </a>
     </footer>
 </body>
